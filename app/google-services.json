@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "982622973447",
+    "firebase_url": "https://calidad-a50b8.firebaseio.com",
+    "project_id": "calidad-a50b8",
+    "storage_bucket": "calidad-a50b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982622973447:android:ff553a54a0aaae25",
+        "android_client_info": {
+          "package_name": "edu.temp.udc.proyectotempe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982622973447-8endej52pnqd9kjvf9vr7e8v6ebhhrs6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.temp.udc.proyectotempe",
+            "certificate_hash": "e5e80bd133b731642e06601c819cd9bdff72682b"
+          }
+        },
+        {
+          "client_id": "982622973447-0raakoibq9a4jv7rs0s1kae6lpfq0egi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANGY4kMhdpCi_vifUY0z-bAECoQUi3ha8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982622973447-0raakoibq9a4jv7rs0s1kae6lpfq0egi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">METRICS TEMP</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email.</string>
+    <string name="prompt_password">Contraseña.</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="action_sign_in_short">Ingresar</string>
+    <string name="error_invalid_email">email el invalido</string>
+    <string name="error_invalid_password">contraseña vacia</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">TemApp</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Usuarios</string>
+    <string name="title_notifications">Historial</string>
+    <string name="title_person">Personal</string>
+    <string name="title_acerca_de">Acerca de</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="nombre">Nombre.</string>
+    <string name="name_error">Nombre requerido</string>
+    <string name="error_invalid_password2">minimo 8 caracteres</string>
+    <string name="repetir_contrase_a">Repetir contraseña.</string>
+    <string name="no_cohicidencia">Las contraseñas no son iguales.</string>
+    <string name="lo_sentimos_nhay_problemas_con_la_conexi_n">Lo sentimos hay problemas con la conexión</string>
+    <string name="edad">Edad.</string>
+    <string name="apellido">Apellido.</string>
+    <string name="crear_usuario">Crear Usuario</string>
+    <!-- String related to About -->
+    <string name="title_activity_about">About Me</string>
+    <string name="about_version">Version: </string>
+    <string name="about_email_intent">About:MaterialDesign</string>
+    <string name="about_not_found_email">Not found email app</string>
+    <string name="about_card1_title">Material Design Demo</string>
+    <string name="about_card1_message">METRICS TEMP</string>
+    <string name="about_card2_title">Si te gustó la aplicación, no dudes en contactarme.</string>
+    <string name="about_google_play">Busca en Google play</string>
+    <string name="about_email"> E-mail</string>
+    <string name="about_git_hub">Codigo en GitHub</string>
+    <string name="about_address">Cartagena, Colombia</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Cerrar</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="contrase_a_actual">Contraseña Actual</string>
+    <string name="contrase_a_nueva">Contraseña nueva</string>
+    <string name="repetir_contrase_a_nueva">Repetir contraseña nueva</string>
+    <string name="cambiar_contrase_a">Cambiar Contraseña</string>
+
+    <!-- String related to About -->
+</resources>

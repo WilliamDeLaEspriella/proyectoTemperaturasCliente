@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="edu.temp.udc.proyectotempe.Vista.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--TextClock
+                android:id="@+id/clock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="20dp"
+                android:format12Hour="hh:mm:ss"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean_mr1" /-->
+
+            <ImageView
+
+                android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/alarma" />
+
+            <TextView
+                android:id="@+id/tempAla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullscreen_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="45°"
+                android:textColor="@android:color/white"
+                android:textSize="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempAla"
+                android:layout_centerHorizontal="true"
+                android:text="Temperatura Actual"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/sintomas"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center|top"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="Usuario posee temeperatura elevada"
+                        android:textSize="20dp" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

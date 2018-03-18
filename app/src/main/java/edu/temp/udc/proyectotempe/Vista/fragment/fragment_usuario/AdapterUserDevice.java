@@ -1,6 +1,7 @@
 package edu.temp.udc.proyectotempe.Vista.fragment.fragment_usuario;
 
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Context;
@@ -70,29 +71,34 @@ public class AdapterUserDevice extends RecyclerView.Adapter<AdapterUserDevice.pr
         return new pruevaViewHolder(v);
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(final pruevaViewHolder holder, final int position) {
         final UserDevice userDevic = this.userDevice.get(position);
-        holder.nombre.setText(userDevic.getNombre());
-        holder.edad.setText(userDevic.getEdad() + " Años");
+        holder.nombre.setText(userDevic.getNombre().toUpperCase());
+       // holder.edad.setText(userDevic.getEdad() + " Años");
         holder.device.setText("conectado a: " + userDevic.getDevice());
         holder.dato.setText(userDevic.getDato() + "º");
 
 //        holder.device.setText(userDevic.getDevice().getNombre());
-        holder.apellido.setText(userDevic.getApellido());
+        holder.apellido.setText(userDevic.getApellido().toUpperCase());
         Animation animation = AnimationUtils.loadAnimation(context, R.anim.anim_recycler_item_show);
         holder.mView.startAnimation(animation);
         double dato=Double.parseDouble(userDevic.getDato());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
             if (dato < 36) {
+                holder.dato.setTextColor(context.getResources().getColor(R.color.colorFreezer));
                 holder.rela_round.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.colorFreezer)));
 
             } else if (dato >= 36 && dato < 37) {
+                holder.dato.setTextColor(context.getResources().getColor(R.color.colorNormal));
                 holder.rela_round.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.colorNormal)));
             } else if (dato >= 37 && dato < 38) {
+                holder.dato.setTextColor(context.getResources().getColor(R.color.colorAdver));
                 holder.rela_round.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.colorAdver)));
             } else if (dato >= 38) {
+                holder.dato.setTextColor(context.getResources().getColor(R.color.colorHot));
                 holder.rela_round.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(R.color.colorHot)));
             }
         }
@@ -168,7 +174,7 @@ public class AdapterUserDevice extends RecyclerView.Adapter<AdapterUserDevice.pr
     public static class pruevaViewHolder extends RecyclerView.ViewHolder  {
         TextView nombre;
         TextView apellido;
-        TextView edad;
+        //TextView edad;
         TextView device;
         TextView dato;
         View mView;
@@ -179,7 +185,7 @@ public class AdapterUserDevice extends RecyclerView.Adapter<AdapterUserDevice.pr
             super(itemView);
             nombre = (TextView) itemView.findViewById(R.id.nombreU);
             apellido = (TextView) itemView.findViewById(R.id.apellidoU);
-            edad = (TextView) itemView.findViewById(R.id.edadU);
+            //edad = (TextView) itemView.findViewById(R.id.edadU);
             device = (TextView) itemView.findViewById(R.id.deviceU);
             dato = (TextView) itemView.findViewById(R.id.datoU);
             mView = itemView;

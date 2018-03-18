@@ -6,8 +6,8 @@ package edu.temp.udc.proyectotempe.ApiRest.adapter;
 
 public class ConstantesApi {
 
-      static final String URL = "http://192.168.1.7:3000";
-     //static final String URL = "https://serene-plains-12871.herokuapp.com/";
+    //static final String URL = "http://192.168.1.7:3000";
+     static final String URL = "https://serene-plains-12871.herokuapp.com/";
    static final String SIGN_IN_CLIENTE = "signIn";
     static final String SIGN_UP_CLIENTE = "signUp";
     static final String GET_USER_DEVICE = "getUserDevice";
